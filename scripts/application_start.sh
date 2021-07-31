@@ -1,10 +1,10 @@
 #!/bin/bash
 
 #give permission for everything in the qbookbeapp directory
-sudo chmod -R 777 /home/ec2-user/qbookbeapp
+sudo chmod -R 777 /home/ec2-user/qbookfeapp
 
 #navigate into our working directory where we have all our github files
-cd /home/ec2-user/qbookbeapp
+cd /home/ec2-user/qbookfeapp
 
 #add npm and node to path
 export NVM_DIR="$HOME/.nvm"	
@@ -15,4 +15,4 @@ export NVM_DIR="$HOME/.nvm"
 npm install
 
 #start our node app in the background
-npm run start > app.out.log 2> app.err.log < /dev/null &  
+npm run install:clean > app.out.log 2> app.err.log < /dev/null &  
